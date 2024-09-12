@@ -64,7 +64,9 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button" data-modal-open>Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- #endregion hero -->
@@ -474,25 +476,26 @@
         <div class="footer-group-subscribe">
           <p class="footer-text-subscribe">Subscribe</p>
           <form class="footer-cont-mail">
-            <div class="footer-mail">
-              <label class="footer-cont-label visually-hidden" for="user-email-footer"
-                >E-mail</label
-              >
-              <div class="footer-cont-input">
-                <input
-                  class="footer-input"
-                  type="email"
-                  id="user-email-footer"
-                  placeholder="E-mail"
-                  required
-                />
-              </div>
-            </div>
+            <label
+              class="footer-cont-label visually-hidden"
+              for="user-email-footer"
+              >E-mail</label
+            >
+
+            <input
+              class="footer-input"
+              type="email"
+              id="user-email-footer"
+              name="email"
+              placeholder="E-mail"
+              required
+            />
+
             <button class="footer-submit" type="submit">
               Subscribe
-                <svg class="footer-icon-send" width="24" height="20">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
+              <svg class="footer-icon-send" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
             </button>
           </form>
         </div>
@@ -512,7 +515,13 @@
           <div class="form-wrapper-cont">
             <label class="modal-form-label" for="user-name">Name</label>
             <div class="modal-cont-input">
-              <input class="modal-input" type="text" id="user-name" required />
+              <input
+                class="modal-input"
+                type="text"
+                id="user-name"
+                name="user-name"
+                required
+              />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
@@ -526,7 +535,7 @@
                 class="modal-input"
                 type="tel"
                 id="user-phone"
-                pattern="\+?[0-9\s\-\(\)]*"
+                name="user-phone"
                 required
               />
               <svg class="modal-icon" width="18" height="24">
@@ -541,6 +550,7 @@
                 class="modal-input"
                 type="email"
                 id="user-email-modal"
+                name="user-email-modal"
                 required
               />
               <svg class="modal-icon" width="18" height="24">
@@ -548,23 +558,26 @@
               </svg>
             </div>
           </div>
-          <div class="form-wrapper-cont-coment">
-            <label class="modal-form-label-coment" for="user-coment"
+          <div class="form-wrapper-cont-comment">
+            <label class="modal-form-label-comment" for="user-comment"
               >Comment</label
             >
             <textarea
               class="modal-textarea"
-              id="user-coment"
+              id="user-comment"
+              name="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
           <div class="modal-cont-checkbox">
             <input
+              value="true"
               type="checkbox"
-              id="user-checkbox"
+              id="user-privacy"
               class="checkbox visually-hidden"
+              name="user-privacy"
             />
-            <label for="user-checkbox" class="custom-label-user-checkbox">
+            <label for="user-privacy" class="custom-label-user-checkbox">
               <span class="custom-checkbox">
                 <svg class="checkbox-vector" width="10" height="8">
                   <use href="./images/icons.svg#icon-vector"></use>
@@ -579,6 +592,6 @@
       </div>
     </div>
     <!-- #endregion modal -->
-     <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
