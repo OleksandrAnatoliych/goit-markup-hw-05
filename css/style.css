@@ -496,13 +496,13 @@ img {
 }
 
 .footer-cont-label {
+  display: flex;
+  flex-direction: column;
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #8e8f99;
-  display: block;
-  margin-bottom: 4px;
+  color: #fff;
 }
 .visually-hidden {
   position: absolute;
@@ -512,6 +512,7 @@ img {
   padding: 0;
   overflow: hidden;
 }
+
 .footer-input {
   width: 264px;
   height: 40px;
